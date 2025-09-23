@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #6f42c1;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #343a40;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--background-color);
+}
+
+.admin-header {
+    background-color: var(--card-bg);
+    padding: 20px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.admin-header h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-header h2 i {
+    color: var(--primary-color);
+}
+
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 25px;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--background-color);
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    margin-bottom: 8px;
+}
+
+.card-body p strong {
+    color: var(--text-color);
+    font-weight: 600;
+    width: 120px;
+    display: inline-block;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: var(--border-radius);
+    padding: 15px 20px;
+    font-size: 0.95rem;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.profile-actions {
+    margin-bottom: 20px;
+}
+
+.profile-actions .btn {
+    width: auto;
+}
